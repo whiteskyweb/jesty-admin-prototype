@@ -300,12 +300,23 @@ h1, h2, h3, .brand {
   border: 1px solid rgba(0,0,0,.09);
 }
 
-.label.status {
-  display: block;
-  height: 17px;
-  width: 15px;
-  border-radius: 50%;
-  margin: 0 auto;
-  text-align: center;
-  border: 2px solid rgba(0,0,0,.09);
+.label {
+  &-success {
+    background-color: #5cb85c;
+  }
+  &-warning {
+    background-color: #f1c78b;
+  }
+  &-danger {
+    background-color: #de7875;
+  }
+  &.status {
+    display: block;
+    height: 17px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid rgba(0,0,0,.09);
+  }
 }
